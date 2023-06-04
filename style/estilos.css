@@ -10,7 +10,7 @@
     text-align: center;
     display: flex;
     width: 220px;
-    margin-left: 80px;
+    margin-left: 70px;
     display: inline-block;
     border-radius: 4px;
     font-size: 25px;
@@ -29,9 +29,10 @@ nav{
     padding: 20px 50px;
 }
 
-.logo2{
-    height: 40px;
+.enlace img{
     display: inline-flex;
+    width: 72px;
+    margin: 5px 10px 0px 10px;
 }
 nav ul{
     float: right;
