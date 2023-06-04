@@ -10,7 +10,7 @@
     text-align: center;
     display: flex;
     width: 220px;
-    margin-left: 150px;
+    margin-left: 80px;
     display: inline-block;
     border-radius: 4px;
     font-size: 25px;
@@ -44,8 +44,8 @@ nav ul li{
 }
 nav ul li a{
     color: #fff;
-    font-size: 18px;
-    padding: 7px 13px;
+    font-size: 13px;
+    padding: 7px 10px;
     border-radius: 3px;
     text-transform: uppercase;
 }
@@ -65,16 +65,13 @@ ul li a:hover{
     display: none;
 }
 
-@media (max-width: 768px){
+@media (min-width:768px) and (max-width: 1020px){
     .enlace{
         padding-left: 20px;
     }
     nav ul li a{
         font-size: 16px;
     }
-    /*.titulomenu{
-        display: none;
-    }*/
     .checkbtn{
         display: block;
     }
@@ -91,11 +88,11 @@ ul li a:hover{
     }
     nav ul li{
         display: block;
-        margin: 50px 0;
+        margin: 25px 0;
         line-height: 30px;
     }
     nav ul li a{
-        font-size: 20px;
+        font-size: 16px;
         text-decoration: none;
     }
     li a:hover, li a.active{
@@ -106,7 +103,7 @@ ul li a:hover{
         left: 0;
     }
 }
-@media (max-width: 375px){
+@media (max-width: 767px){
     .enlace img{
         width: 50px;
         margin-top: 20px;
@@ -123,7 +120,7 @@ ul li a:hover{
     }
     ul{
         position: fixed;
-        width: 100%;
+        width: 35%;
         height: 100vh;
         background: #2c3e50;
         top: 80px;
@@ -134,11 +131,12 @@ ul li a:hover{
     }
     nav ul li{
         display: block;
-        margin: 50px 0;
+        margin: 15px 0;
         line-height: 30px;
     }
     nav ul li a{
-        font-size: 20px;
+        font-size: 10px;
+        text-decoration: none;
     }
     li a:hover, li a.active{
         background: none;
@@ -146,6 +144,10 @@ ul li a:hover{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+    .checkbtn{
+        display: block;
+        margin-right: 20px;
     }
 
 }
@@ -162,15 +164,15 @@ body section{
 
 .maine{
     background-image: url(../img/frio-calor.jpg);
-    height: 98vh;
     width: 100%;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 .titulo1{
+    margin-top: 60px;
     text-align: center;
     font-size: 35px;
 }
@@ -183,18 +185,27 @@ body section{
     width: 800px;
     height: 400px;        
 }
-@media (max-width: 768px){
+@media (min-width:768px) and (max-width: 1020px){
+    .titulo1{
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    .titulo2{
+        font-size: 25px;
+    }
     .maine{
         height: 280px;
         object-fit: cover;
     }
     .articulo1{
+        text-align: center;
+        font-size: 15px;
         width: 480px;
         height: 200px;        
     }
 
 }
-@media (max-width: 375px){
+@media (max-width: 767px){
 
     .maine{
         height: 280px;
@@ -280,7 +291,7 @@ body section{
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
-@media (max-width:768px){
+@media (min-width:768px) and (max-width: 1020px){
     .box-2{
         margin-right: 10px;
         width: 100%;
@@ -301,8 +312,7 @@ body section{
         padding: 35px 0px;  
     }
 }
-@media (max-width:375px)
-{
+@media (max-width:768px){
 
     .box-2{
         margin-right: 10px;
@@ -314,14 +324,21 @@ body section{
     .box p{
         text-align: center;
     }
+    .pie-pagina .grupo-1 .red-social a{
+        margin: 15px;
+    }
     .red-social{
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
     }
     .pie-pagina .grupo-1{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
         padding: 35px 0px;  
+    }
+    .pie-pagina .grupo-1 .box figure img{
+        width: 60px;
     }
          
 }
@@ -332,9 +349,10 @@ body section{
 .conteiner{
     display: flex;
     background-color: #5BC0BE;
+    width: 100%;
 }
 .conteiner-form{     
-    width: 100%;
+    width: 95%;
     max-width: 1100px;
     margin: auto;
     display: grid;
@@ -344,7 +362,7 @@ body section{
     margin-bottom: 50px ;
     margin-left: 15px;
 }
-.conteiner-form h2{
+.conteiner-form h1{
     font-size: 35px;
     margin-bottom: 15px;
 }
@@ -372,6 +390,85 @@ body section{
     font-size: 15px;
     border: 2px solid #0a1a2a;
 }
+@media (min-width:768px) and (max-width: 1024px){
+    .conteiner-form{     
+        width: 80%;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 50px;
+        margin-bottom: 30px;
+    }
+    .conteiner-form h1{
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .conteiner-form p{
+        font-size: 17px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+    .conteiner-form a{
+        font-size: 17px;
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 100%;
+        color: black;
+        font-weight: 700;
+        text-decoration: none;    
+    }
+    .conteiner-form a i{
+        color:#2c3e50;
+        margin-right: 10px;
+    }
+    .conteiner-form form .campo, textarea{
+        width: 100%;
+        font-size: 15px;
+        border: 2px solid #0a1a2a;
+    }
+}
+@media (max-width:767px){
+    .conteiner-form{     
+        width: 70%;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 50px;
+        margin-bottom: 30px;
+    }
+    .conteiner-form h1{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .conteiner-form p{
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+    .conteiner-form a{
+        font-size: 12px;
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 100%;
+        color: black;
+        font-weight: 700;
+        text-decoration: none;    
+    }
+    .conteiner-form a i{
+        color:#2c3e50;
+        margin-right: 10px;
+    }
+    .conteiner-form form .campo, textarea{
+        width: 100%;
+        font-size: 15px;
+        border: 2px solid #0a1a2a;
+    }
+
+}
 /* -----------------------------------------------FinPestañaContacto----------------------------------------------- */
 /* -----------------------------------------------pestañatrabajos----------------------------------------------- */
 .trabajos{
@@ -382,10 +479,14 @@ body section{
     width: 50%;
     margin: 30px 15px;
 }
+.trabajos-2 iframe{
+    width: 100%;
+    height: 70%;
+}
 .imagentrabajo1{
     margin-top: 10px;
-    width: 640px;
-    height: 360px;
+    width: 100%;
+    height: 70%;
 }
 .trabajos-2{
     width: 50%;
@@ -396,6 +497,74 @@ body section{
 }
 .trabajos-2 h2{
     text-align: center;
+}
+@media (min-width:768px) and (max-width: 1024px){
+    .trabajos{
+        display: flex;   
+    }
+    .trabajos-1{
+        display: grid;
+        width: 50%;
+    }
+    .trabajos-1 h1{
+        text-align: center;
+    }
+    .trabajos-1 p{
+        text-align: center;
+    }
+    .trabajos-2{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .trabajos-2 h2{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .trabajos-2 p{
+        text-align: center;
+    }
+}
+@media (max-width:767px){
+    .trabajos{
+        display: grid;
+
+    }
+    .imagentrabajo1{
+        margin-top: 10px;
+        width: 300px;
+        height: 140px;
+    }
+    .trabajos-1{
+        display: grid;
+        width: 30%;
+    }
+    .trabajos-1 h1{
+        text-align: center;
+        font-size: 15px;
+    }
+    .trabajos-1 p{
+        text-align: center;
+        font-size: 10px;
+    }
+    .trabajos-2{
+        display: grid;
+        width: 20%;
+    }
+    .trabajos-2 h2{
+        margin-top: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .trabajos-2 p{
+        text-align: center;
+        font-size: 10px;
+    }
+    .trabajos-2 iframe{
+        width: 300px;
+        height: 160px;
+    }
+
 }
 /* -----------------------------------------------FinPestañatrabajos----------------------------------------------- */
 
@@ -430,6 +599,53 @@ body section{
 .principios h2{
     margin-bottom: 25px;
 }
+@media (min-width:768px) and (max-width: 1024px){
+    .sobrenosotros{
+        display: grid;
+        align-items: center;
+    }
+    .sobrenosotros h1{
+        text-align: center;
+        font-size: 32px;
+    }
+    .quienessomos h2{
+        text-align: center;
+        font-size: 25pX;
+    }
+    .quienessomos p{
+        font-size: 15px;
+    }
+
+}
+@media (max-width:767px){
+    
+    .sobrenosotros{
+        display: flex;
+        
+    }
+    .sobrenosotros h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .quienessomos{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+    .nuestrocompromiso{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+    .principios{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+
+  
+}
 
 /* -----------------------------------------------FinPestañaNosotros----------------------------------------------- */
 
@@ -437,6 +653,8 @@ body section{
 .servicios{
     background-image: url(../img/fservicios.jpg);
     background-size: cover;
+    width: 100%;
+    height: 100%;
     display: inline-block;
     background-repeat: no-repeat;
 }
@@ -445,7 +663,7 @@ body section{
     margin-bottom: 150px;
     margin-right: 350px;
 }
-.servicios1 h2{
+.servicios1 h1{
     text-align: center;
     font-size: 45px;
     margin-bottom: 45px;
@@ -462,5 +680,61 @@ body section{
 .servicios p{
     text-align: center;
     
+}
+@media (min-width:768px) and (max-width: 1024px){
+    .servicios{
+        display: flex;
+        background-size: 100% 100%;
+    }
+    .servicios1{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+    }
+    .servicios1 h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .ptservicios{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .pserviciosu{
+        margin-bottom: 10px;
+    } 
+}
+@media (max-width:767px){
+    .servicios{
+        display: flex;
+        background-size: 100% 100%;
+    }
+    .servicios1{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+    }
+    .servicios1 h1{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .ptservicios{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .tpservicios{
+        font-size: 15px;
+    }
+    .pservicios{
+        font-size: 10px;
+    }
+    .pserviciosu{
+        font-size: 10px;
+        margin-bottom: 10px;
+    } 
 }
 /* -----------------------------------------------FinPestañaServicios----------------------------------------------- */
