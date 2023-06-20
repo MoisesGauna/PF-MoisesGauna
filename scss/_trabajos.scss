@@ -1,0 +1,130 @@
+.trabajos{
+    background-color: rgb(152, 133, 235);
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    .trabajos-1{
+        @include tarjetasTr;
+        object-fit: contain;
+        .imagentrabajo1{
+            margin-top: 10px;
+            width: 385px;
+            height: 240px;
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            padding: 5px;
+        }
+        p{
+            padding: 10px;
+        }
+    }
+    .trabajos-2{
+        @extend .trabajos-1;
+        iframe{
+            justify-content: center;
+            width: 400px;
+            height: 240px;
+            padding: 10px;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            padding: 10px;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px){
+    .trabajos{
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        .trabajos-1{
+            display: grid;
+            width: 90%;
+            h1{
+                text-align: center;
+                font-size: 20px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            p{
+                text-align: center;
+                font-size: 15px;
+            }
+            .imagentrabajo1{
+                margin-top: 10px;
+                width: 94%;
+                height: 80%;
+                padding: 10px;
+            }
+        }
+        .trabajos-2{
+            width: 90%;
+            iframe{
+                width: 94%;
+                height: 70%;
+                padding: 10px;
+            }
+            h2{
+                text-align: center;
+                margin-top: 10px;
+            }
+            p{
+                text-align: center;
+            }
+        } 
+    }
+}
+@media (max-width:767px){
+    .trabajos{
+        display: flex;
+        flex-direction: column;
+        .trabajos-1{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            .imagentrabajo1{
+                margin-top: 10px;
+                width: 94%;
+                height: 40%;
+                padding: 10px;
+            }
+            h1{
+                text-align: center;
+                font-size: 15px;
+            }
+            h2{
+                font-size: 15px;
+            }
+            p{
+                text-align: center;
+                font-size: 10px;
+            }
+        }
+        .trabajos-2{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            h2{
+                margin-top: 10px;
+                font-size: 15px;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 10px;
+            }
+            iframe{
+                width: 94%;
+                height: 90%;
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.nosotros-22{
+    background: radial-gradient( #0a369d, #4472ca, #5e7ce2, #92b4f4, #cfdee7);
+    .sobrenosotros{
+        text-align: center;
+        background-color: #92b4f4;
+        font-size: 35px;
+    }
+    .quienessomos{
+        @include nosotrostx;
+    }
+    .nuestrocompromiso{
+        @include nosotrostx;
+    }
+    .principios{
+        text-align: center;
+        margin: 0px 175px;
+        h2{
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px){
+    .nosotros-22{
+        .sobrenosotros{
+            display: grid;
+            align-items: center;
+            h1{
+                text-align: center;
+                font-size: 32px;
+            }
+        }
+        .quienessomos{
+            h2{
+                text-align: center;
+                font-size: 25pX;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width:767px){
+    .nosotros-22{
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+        .sobrenosotros{
+            display: flex;
+            justify-content: center;
+            h1{
+                text-align: center;
+                font-size: 25px;
+            }
+        }
+        .quienessomos{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 20px;
+        }
+        .nuestrocompromiso{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 20px;
+        }
+        .principios{
+            display: flex;
+            flex-direction: column;
+            margin: 0px 20px;
+        }
+    }
+}
