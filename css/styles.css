@@ -535,7 +535,7 @@ body .bannerpagos img {
   }
 }
 .servicios {
-  background-image: url(../img/fservicios.jpg);
+  background-image: url(../img/fserviciosO.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -600,7 +600,7 @@ body .bannerpagos img {
   }
   .servicios .servicios1 h2 {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-size: 20px;
   }
   .servicios .servicios1 .ptservicios {
@@ -612,7 +612,8 @@ body .bannerpagos img {
     font-size: 15px;
   }
   .servicios .servicios1 .pservicios {
-    font-size: 10px;
+    margin: 10px;
+    font-size: 12px;
   }
   .servicios .servicios1 .pserviciosu {
     font-size: 10px;
